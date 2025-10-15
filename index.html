@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,17 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
     <header>
         <nav>
             <div class="logo">Simon Boualam</div>
             <ul class="nav-links">
-                <li>À propos de moi</li>
-                <li>Expérience</li>
-                <li>Contact</li>
+                <li><a href="#a-propos">À propos de moi</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="burger-menu">
                 <div class="line1"></div>
@@ -30,7 +31,7 @@
     <main>
         <section id="a-propos">
             <div class="a-propos-contenu">
-                 <img src="https://via.placeholder.com/150" alt="Photo de Simon Boualam" class="photo-profil">
+                <img src="https://via.placeholder.com/150" alt="Photo de Simon Boualam" class="photo-profil">
                 <div class="a-propos-texte">
                     <h2>À propos de moi</h2>
                     <p>Je m'appelle Simon Boualam et je suis en 1ere année de bachelor informatique a Lille.
@@ -38,16 +39,19 @@
                 </div>
             </div>
         </section>
-        <section id="experience">
-            <h2>Expérience</h2>
-            <div class="competences">
-            <h3>Compétences</h3>
-            <ul>
-            <li>Débian</li>
-            <li>Cisco Packet Tracer</li>
-            <li>Configuration de switch</li>
-            <li>HTML (novice)</li>
-            </ul>
+
+          <section id="competences">
+    <h2>Compétences</h2>
+    <div class="competence-items">
+        <div class="competence-item">🐧 Débian</div>
+        <div class="competence-item">🌐 Cisco Packet Tracer</div>
+        <div class="competence-item">🔌 Configuration de switch</div>
+        <div class="competence-item">💻 HTML (novice)</div>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Expérience</h2>
 
             <div class="timeline">
                 <div class="timeline-item">
@@ -76,15 +80,15 @@
                 </div>
             </div>
         </section>
-
+        
         <section id="contact">
             <h2>Contact</h2>
             <p>N'hésitez pas à me contacter ! Je suis ouvert à de nouvelles opportunités et collaborations.</p>
             <ul class="contact-links">
-                <li>tel: 06.10.11.12.13</li>
-                <li>boualamsimon21@gmail.com</li>
-                <li>linkedin:Simon Boualam</li>
-                <li>github:Sblm59</li>
+                <li><a href="tel:+33610111213">Téléphone : 06.10.11.12.13</a></li>
+                <li><a href="mailto:boualamsimon21@gmail.com">Email : boualamsimon21@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/simon-boualam-decruyenaere/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/Simon-blm" target="_blank">GitHub</a></li>
             </ul>
         </section>
     </main>

@@ -34,9 +34,47 @@ h2 {
     margin-bottom: 40px;
     font-size: 2rem;
     color: var(--couleur-principale);
+    }
+
+.competences{
+    max-width: 900px;
+    margin: 0 auto 60px auto; 
+    text-align: center;
 }
 
-/* --- HEADER ET NAVIGATION --- */
+.competences h3 {
+    font-size: 1.8rem;
+    color: #333; 
+    margin-bottom: 30px;
+}
+
+
+.competence-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 15px;               
+}
+
+.competence-item {
+    background-color: #ffffff; 
+    border: 1px solid #dee2e6; 
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #212529;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); 
+    
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.competence-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.15); 
+    cursor: default;
+}
+
 header {
     background: var(--couleur-fond-header);
     padding: 1rem 20px;
@@ -60,7 +98,7 @@ nav {
 }
 
 .nav-links {
-    display: none; /* Caché sur mobile, géré par le burger menu */
+    display: none; 
     list-style: none;
 }
 
@@ -75,9 +113,8 @@ nav {
     color: var(--couleur-principale);
 }
 
-/* Style pour le menu burger (visible sur mobile) */
 .burger-menu {
-    display: block; /* Sera masqué sur les grands écrans */
+    display: block; 
     cursor: pointer;
 }
 
@@ -90,9 +127,9 @@ nav {
 }
 
 
-/* --- SECTION À PROPOS --- */
+
 #a-propos {
-    padding-top: 100px; /* Pour ne pas être caché par le header fixe */
+    padding-top: 100px; 
 }
 
 .a-propos-contenu {
@@ -109,14 +146,14 @@ nav {
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* --- SECTION EXPÉRIENCE (TIMELINE) --- */
+
 .timeline {
     position: relative;
     max-width: 100%;
     margin: 0 auto;
 }
 
-/* La ligne verticale de la timeline */
+
 .timeline::after {
     content: '';
     position: absolute;
@@ -124,11 +161,11 @@ nav {
     background-color: var(--couleur-principale);
     top: 0;
     bottom: 0;
-    left: 20px; /* Aligné avec les points */
+    left: 20px; 
 }
 
 .timeline-item {
-    padding-left: 60px; /* Espace pour la ligne et le point */
+    padding-left: 60px; 
     position: relative;
     margin-bottom: 40px;
 }
@@ -155,13 +192,18 @@ nav {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: scale(1.05); 
 }
 
 .timeline-content h3 {
     margin-bottom: 10px;
 }
 
-/* --- SECTION CONTACT --- */
+
 #contact p {
     text-align: center;
     max-width: 600px;
@@ -191,13 +233,38 @@ nav {
 .contact-links i {
     margin-right: 10px;
     color: var(--couleur-principale);
-    width: 20px; /* Pour un alignement parfait */
+    width: 20px; 
 }
 
-/* --- FOOTER --- */
+
 footer {
     text-align: center;
     padding: 20px;
     background: #333;
     color: #fff;
 }
+
+@media (min-width: 768px) {
+
+    
+    .burger-menu {
+        display: none;
+    }
+
+   
+    .nav-links {
+        display: flex; 
+        list-style: none;
+        gap: 30px; 
+    }
+    
+    .nav-links a {
+        text-decoration: none; 
+        color: #333; 
+        font-weight: 600;
+        transition: color 0.3s ease; 
+
+    .nav-links a:hover {
+        color: #007BFF; 
+    }
+                }
