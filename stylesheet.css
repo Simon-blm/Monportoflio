@@ -1,7 +1,7 @@
-/* --- VARIABLES ET STYLES GÉNÉRAUX --- */
+
 :root {
-    --couleur-principale: #007BFF; /* Un bleu moderne */
-    --couleur-secondaire: #f4f4f9; /* Un fond très clair */
+    --couleur-principale: #007BFF; 
+    --couleur-secondaire: #f4f4f9; 
     --couleur-texte: #333;
     --couleur-bordure: #ddd;
     --couleur-fond-header: #ffffff;
@@ -270,33 +270,33 @@ footer {
                 }
 
 
-.contact-form {
+form {
     margin-top: 50px; 
     max-width: 700px; 
     margin-left: auto; 
     margin-right: auto;
 }
 
-.contact-form h3 {
+form h3 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 2rem; 
     color: #007BFF;
 }
 
-.contact-form .form-groupe {
+form .form-groupe {
     margin-bottom: 25px;
 }
 
-.contact-form label {
+form label {
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
     color: #007BFF;
 }
 
-.contact-form input,
-.contact-form textarea {
+form input,
+form textarea {
     width: 100%;
     padding: 15px;
     border-radius: 5px;
@@ -308,8 +308,8 @@ footer {
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
+.form input:focus,
+.form textarea:focus {
     outline: none;
     border-color: #007bff; 
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); 
@@ -317,7 +317,7 @@ footer {
 
 }
 
-.btn-envoyer {
+.button {
     display: block;
     width: 100%;
     padding: 15px;
@@ -331,7 +331,7 @@ footer {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn-envoyer:hover {
+.button:hover {
     background-color: #0056b3; 
     transform: translateY(-2px); 
 }
