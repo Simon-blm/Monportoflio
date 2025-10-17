@@ -28,6 +28,11 @@ section {
     padding: 60px 20px;
     border-bottom: 1px solid var(--couleur-bordure);
 }
+.experiences {
+    display: flex;
+  justify-content: center;
+  flex-direction: column
+    }       
 
 h2 {
     text-align: center;
